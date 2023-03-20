@@ -1,0 +1,248 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+
+     <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>school!!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/favico.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/meanmenu.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/et-line-icon.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+         <!-- Header Area Start -->
+		<header class="top">
+		    <div class="header-top">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-8 col-sm-8">
+		                    <div class="header-top-left">
+		                      <marquee><p>HAVE ANY QUESTION ?  +919060380668</p></marquee>
+		                    </div>
+		                </div>
+		                <div class="col-md-4 col-sm-4">
+		                    <div class="header-top-right text-md-end text-center">
+		                        <ul>
+		                            <li><a href="Login.aspx">login</a></li>
+		                          <%--  <li><a href="signup.html">signup</a></li>--%>
+		                        </ul>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+			<div class="header-area two header-sticky">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-5 col-6">
+							<div class="logo">
+								 <a href="Default.aspx"><img src="img/logo/logo2.png" alt="eduhome" /></a>
+							</div>
+						</div>
+						<div class="col-md-9 col-sm-7 col-6">
+                            <div class="content-wrapper text-end">
+                                <!-- Main Menu Start -->
+                                <div class="main-menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="Default.aspx">Home</a>
+                                               
+                                            </li>
+                                            <li><a href="About_us.aspx">About</a></li>
+                                            <li><a href="Addmission.aspx">Addmission</a>
+                                               
+                                            </li>
+                                            <li><a href="Gallery.aspx">Gallery</a>
+                                               
+                                            </li>
+                                            <li class="hidden-sm"><a href="Teachers.aspx">teacher</a>
+                                               
+                                            </li>
+                                            <li><a href="Alumnus.aspx">Alumnus</a>
+                                               
+                                            </li>
+                                            <li><a href="Contact.aspx">Contact</a></li>
+                                            
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!--Search Form Start-->
+                                <%--<div class="search-btn">
+                                    <ul class="header-search search-toggle">
+                                        <li class="search-menu">
+                                            <i class="fa fa-search"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="search">
+                                        <div class="search-form">
+                                            <div id="search-form" action="#">
+                                                <input type="search" placeholder="Search here..." name="search" />
+                                                <button type="submit">
+                                                    <span><i class="fa fa-search"></i></span>
+                                                </button>
+                                            </div>                                
+                                        </div>
+                                    </div>
+                                </div>--%>
+                                <!--End of Search Form-->
+                                <!-- Main Menu End -->
+                            </div>
+						</div>
+                        <div class="col-12">
+                            <div class="mobile-menu hidden-sm"></div> 
+                        </div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header Area End -->
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+       <%--  <!-- Subscribe Start -->
+        <div class="subscribe-area pt-60 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="subscribe-content section-title text-center">
+                            <h2>subscribe our newsletter</h2>
+                            <p>I must explain to you how all this mistaken idea </p>
+                        </div>
+                        <div class="newsletter-form mc_embed_signup">
+                            <div action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll" class="mc-form"> 
+                                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your e-mail address" required>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div class="mc-news" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
+                                    <button id="mc-embedded-subscribe" class="default-btn" type="submit" name="subscribe"><span>subscribe</span></button> 
+                                </div>    
+                            </div>
+                            <!-- mailchimp-alerts Start -->
+                            <div class="mailchimp-alerts">
+                                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+                                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                            </div>
+                            <!-- mailchimp-alerts end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Subscribe End -->--%>
+
+  <!-- Footer Start -->
+        <footer class="footer-area">
+            <div class="main-footer border-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-widget pr-60">
+                                <div class="footer-logo pb-25">
+                                    <a href="index.html"><img src="img/logo/footer-logo.png" alt="eduhome"></a>
+                                </div>
+                                <p>I must explain to you how all this mistaken idea of denoung pleure and praising pain was born and give you a coete account of the system. </p>
+                                <div class="footer-social">
+                                    <ul>
+                                        <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-pinterest"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-vimeo"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                    </ul>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single-widget">
+                                <h3>information</h3>
+                                <ul>
+                                    <li><a href="#">addmission</a></li>
+                                    <li><a href="#">Addmission</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Hostel &amp; Dinning</a></li>
+                                    <li><a href="#">TimeTable</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 pt-4 pt-lg-0">
+                            <div class="single-widget">
+                                <h3>useful links</h3>
+                                <ul>
+                                    <li><a href="#">our courses</a></li>
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">teachers &amp; faculty</a></li>
+                                    <li><a href="#">teams &amp; conditions</a></li>
+                                    <li><a href="#">our events</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 pt-4 pt-lg-0">
+                            <div class="single-widget">
+                                <h3>get in touch</h3>
+                                <p> address West Bailey Road<br>City, Patna – 801 503</p>
+                                <p>+919945994534<br>+919535642435</p>
+                                <p>info@uplinfotech.com<br>www.uplinfotech.com</p>
+                            
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="footer-bottom text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Copyright © 2022. All Right Developed By <a href="https://uplinfotech.com/" target="_blank">UPL InfoTech</a></p>
+                        </div> 
+                    </div>
+                </div>    
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <script src="js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.meanmenu.js"></script>
+        <script src="js/jquery.magnific-popup.js"></script>
+        <script src="js/ajax-mail.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.mb.YTPlayer.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </form>
+</body>
+</html>
